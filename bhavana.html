@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>A Little Something For You</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            background: #0a0a0a;
+            color: #ffffff;
+            font-family: Arial, Helvetica, sans-serif;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            padding: 25px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 480px;
+            text-align: center;
+        }
+
+        /* Top heading */
+        .eyebrow {
+            color: #b8b8b8;
+            font-size: 12px;
+            font-weight: 600;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+
+            margin-bottom: 35px;
+        }
+
+        /* Friend's name */
+        h1 {
+            font-size: clamp(32px, 9vw, 46px);
+            font-weight: 600;
+            letter-spacing: -1px;
+
+            margin-bottom: 25px;
+        }
+
+        .friend-name {
+            color: #e50914;
+        }
+
+        /* Gift message */
+        .gift-message {
+            font-size: clamp(20px, 5.5vw, 27px);
+            line-height: 1.45;
+            font-weight: 500;
+
+            margin-bottom: 28px;
+        }
+
+        /* IBM Blue */
+        .ibm-blue {
+            color: #0f62fe;
+            font-weight: 700;
+        }
+
+        /* Red hearts */
+        .heart {
+            color: #e50914;
+        }
+
+        /* Divider */
+        .divider {
+            width: 45px;
+            height: 2px;
+
+            background: #e50914;
+
+            margin: 28px auto;
+        }
+
+        /* Main message */
+        .message {
+            color: #d0d0d0;
+
+            font-size: 16px;
+            line-height: 1.8;
+
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        /* Signature */
+        .signature {
+            margin-top: 38px;
+
+            color: #ffffff;
+
+            font-size: 15px;
+            font-weight: 500;
+
+            letter-spacing: 0.5px;
+        }
+
+        /* Mobile */
+        @media (max-width: 400px) {
+
+            body {
+                padding: 22px;
+            }
+
+            .eyebrow {
+                margin-bottom: 30px;
+            }
+
+            .message {
+                font-size: 15px;
+                line-height: 1.75;
+            }
+
+            .signature {
+                margin-top: 32px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <main class="container">
+
+        <div class="eyebrow">
+            A Little Something For You
+        </div>
+
+        <h1>
+            Hi, <span class="friend-name">Bhavana Venkatrama Reddy</span>
+        </h1>
+
+        <div class="gift-message">
+            You received 15
+            <span class="ibm-blue">IBM Blue points</span>
+            <span class="heart">♥</span>
+        </div>
+
+        <div class="divider"></div>
+
+        <p class="message">
+            These 15 points aren't worth much in money,
+            but they carry a little piece of my gratitude.
+
+            Thank you for being part of my Bengaluru journey
+            and for the memories I will take with me.
+        </p>
+
+        <div class="signature">
+            — Prasad Rajendra Darekar
+            <span class="heart">♥</span>
+        </div>
+
+    </main>
+
+</body>
+</html>
